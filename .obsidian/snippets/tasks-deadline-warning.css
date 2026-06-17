@@ -1,0 +1,58 @@
+/* Tasks Plugin - Deadline Warning Styles */
+/* 临近截止日期任务标红 (3天内) */
+
+/* 高优先级标签样式 */
+.tag[href="#高优先级"],
+.tag[href="#紧急"],
+.tag[href="#重要"] {
+  background-color: #ff6b6b !important;
+  color: white !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+  font-weight: bold !important;
+}
+
+/* 任务项基础样式 */
+.task-list-item {
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  padding-left: 8px;
+  margin-bottom: 4px;
+}
+
+/* 临近截止日期 - 红色警告 */
+.task-list-item:has(.task-description:contains("[due:: 2026-06-22")),
+.task-list-item:has(.task-description:contains("[due:: 2026-06-23")),
+.task-list-item:has(.task-description:contains("[due:: 2026-06-24")),
+.task-list-item:has(.task-description:contains("[due:: 2026-06-25")) {
+  background-color: rgba(255, 107, 107, 0.2) !important;
+  border-left-color: #ff6b6b !important;
+}
+
+/* 已过期任务 - 深红色 */
+.task-list-item:has(.task-description:contains("overdue")) {
+  background-color: rgba(220, 53, 69, 0.25) !important;
+  border-left-color: #dc3545 !important;
+}
+
+/* 已完成任务 - 灰色 */
+.task-list-item.completed {
+  opacity: 0.6;
+  background-color: rgba(108, 117, 125, 0.1);
+}
+
+/* 截止日期文本样式 */
+.due-date {
+  color: #6c757d;
+  font-size: 0.9em;
+  margin-left: 8px;
+}
+
+/* 即将到期警告图标 */
+.task-list-item:has(.task-description:contains("[due:: 2026-06-22")),
+.task-list-item:has(.task-description:contains("[due:: 2026-06-23")),
+.task-list-item:has(.task-description:contains("[due:: 2026-06-24")),
+.task-list-item:has(.task-description:contains("[due:: 2026-06-25"))::before {
+  content: "⚠️";
+  margin-right: 6px;
+}

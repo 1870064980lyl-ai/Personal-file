@@ -1,0 +1,11 @@
+{
+  "QuickAdd": [
+    {
+      "name": "新建待办事项",
+      "type": "template",
+      "template": "待办事项模板",
+      "output": "待办事项/{{title}}",
+      "append": false
+    }
+  ]
+}

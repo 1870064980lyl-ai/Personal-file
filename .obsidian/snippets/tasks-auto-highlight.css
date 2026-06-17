@@ -1,0 +1,80 @@
+/* 任务自动高亮样式 - 基于日期计算 */
+
+/* 基础任务样式 */
+.task-list-item {
+  position: relative;
+  padding: 4px 8px;
+  margin: 2px 0;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* 高优先级任务 - 红色边框 */
+.task-list-item:has(.tag[href="#高优先级"]),
+.task-list-item:has(.tag[href="#紧急"]) {
+  border-left: 4px solid #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+}
+
+/* 中优先级任务 - 橙色边框 */
+.task-list-item:has(.tag[href="#中优先级"]),
+.task-list-item:has(.tag[href="#重要"]) {
+  border-left: 4px solid #ffa500;
+  background-color: rgba(255, 165, 0, 0.1);
+}
+
+/* 低优先级任务 - 绿色边框 */
+.task-list-item:has(.tag[href="#低优先级"]) {
+  border-left: 4px solid #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+/* 即将到期任务 (3天内) - 动态红色背景 */
+.task-list-item:has(.task-description:contains("[due::")) {
+  animation: pulse-warning 2s infinite;
+}
+
+@keyframes pulse-warning {
+  0%, 100% {
+    background-color: rgba(255, 107, 107, 0.1);
+  }
+  50% {
+    background-color: rgba(255, 107, 107, 0.2);
+  }
+}
+
+/* 已完成任务 - 灰色 */
+.task-list-item.completed {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* 任务描述文本 */
+.task-description {
+  font-weight: 500;
+}
+
+/* 截止日期标签 */
+.tag[href^="#due-"] {
+  background-color: #6c757d;
+  color: white;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.85em;
+}
+
+/* 紧急任务标签 */
+.tag[href="#紧急"] {
+  background-color: #dc3545 !important;
+  color: white !important;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.7;
+  }
+}
