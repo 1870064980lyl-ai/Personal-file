@@ -82,14 +82,10 @@ for (const action of actions) {
 >
 >> [!todo]+  Todo
 >>  ### #mcl/list-card
->> - [[5.todo/0_view/todo|todo]]
->> - [[draft-todo]]
->> - [[回顾本周]]
->> - [[0.core]]
->> - [[long-term]]
->> - [[schedule-task]]
->> - [[token-todo]]
->> - [[0-fleeting]]
+>> - [[待办事项/Dashboard|Dashboard]]
+>> - [[待办事项/本月待办|本月待办]]
+>> - [[待办事项/待办事项模板|模板]]
+>> - [[待办事项/使用指南|使用指南]]
 
 
 ## 常用项目
@@ -105,7 +101,7 @@ for (const action of actions) {
 >
 >> [!note]+ 最近笔记
 >> ```dataview
->> LIST FROM "1.Rough" OR "2.Read" OR "3.learn" OR "4.Projects" OR "5.todo" OR "12.skills" OR "JC-open"
+>> LIST FROM "1.Rough" OR "2.Read" OR "3.learn" OR "4.Projects" OR "待办事项" OR "12.skills" OR "JC-open"
 >> SORT file.ctime DESC
 >> LIMIT 5
 >> ```
@@ -114,7 +110,7 @@ for (const action of actions) {
 >> ```tasks
 >> not done
 >> scheduled on today
->> path includes 5.todo
+>> path includes 待办事项
 >> hide backlink
 >> limit 7
 >> ```
