@@ -1,0 +1,28 @@
+﻿/* Personal workspace: restrained visual hierarchy for dashboards and notes */
+.homepage-dashboard .markdown-preview-sizer,
+.task-dashboard .markdown-preview-sizer {
+  max-width: 1100px;
+}
+.homepage-dashboard h1,
+.task-dashboard h1 {
+  letter-spacing: -0.025em;
+  margin-bottom: 1.2rem;
+}
+.homepage-dashboard h2,
+.task-dashboard h2 {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: .35rem;
+  margin-top: 2rem;
+}
+.homepage-dashboard .callout,
+.task-dashboard .callout {
+  border-radius: 12px;
+}
+.homepage-dashboard table,
+.task-dashboard table {
+  width: 100%;
+}
+.homepage-dashboard .task-list-item,
+.task-dashboard .task-list-item {
+  padding-block: .16rem;
+}

@@ -1,7 +1,8 @@
 {
   "defaultViewMode": "preview",
   "spellcheck": true,
-  "newFileLocation": "current",
-  "attachmentFolderPath": "attachments/",
-  "alwaysUpdateLinks": true
+  "newFileLocation": "folder",
+  "attachmentFolderPath": "70-附件",
+  "alwaysUpdateLinks": true,
+  "newFileFolderPath": "10-收集箱"
 }
