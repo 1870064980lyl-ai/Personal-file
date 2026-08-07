@@ -1,0 +1,154 @@
+{
+  "diagnostic_measure": "max(PRESS, 0)", 
+  "element_type": "C3D8", 
+  "epsilon_free_max": 10.0, 
+  "feedback_measure": "max(-S33_local, 0)", 
+  "height_limit_mm": 20.0, 
+  "initial_max_z_mm": 19.770870572989068, 
+  "initial_nonparallel_count": 8, 
+  "initial_nonparallel_threshold_deg": 25.0, 
+  "initial_overlap_check": "PASS_conservative_finite_axis_capsules", 
+  "initial_strong_tilt_count": 8, 
+  "initial_strong_tilt_threshold_deg": 30.0, 
+  "input_path": "D:\\program\\sponge expansion\\M03_test\\workflow\\V07_D30_axial_pressure_feedback\\04_solve\\R224_N08_RANDOM_LOW_E\\V07_D30_AFB_N08_RLOW_E_EPS10_C3D8_TAU050.inp", 
+  "job_name": "V07_D30_AFB_N08_RLOW_E_EPS10_C3D8_TAU050", 
+  "layout_seed": 22401, 
+  "minimum_capsule_clearance_mm": 0.02880052376207587, 
+  "p_on_MPa": 2e-05, 
+  "p_stop_MPa": 0.0001, 
+  "placements": [
+    {
+      "axis": [
+        0.290252284998068, 
+        -0.9568390393712933, 
+        -0.014582996551500525
+      ], 
+      "center_mm": [
+        -5.617755897460392, 
+        -4.4399073940372995, 
+        4.959023967140369
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.16442622711315, 
+      "instance": "Sponge-01", 
+      "spin_deg": 145.9640859169279
+    }, 
+    {
+      "axis": [
+        0.7993191276128676, 
+        0.6007450955009314, 
+        0.013937806993253223
+      ], 
+      "center_mm": [
+        5.202042457502175, 
+        -5.255652644577598, 
+        4.957456081077207
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.20139662575218, 
+      "instance": "Sponge-02", 
+      "spin_deg": 34.96230349903661
+    }, 
+    {
+      "axis": [
+        -0.3047553687420235, 
+        0.9524229159024727, 
+        -0.003841156953939983
+      ], 
+      "center_mm": [
+        5.776071030243247, 
+        4.707829991610602, 
+        4.932654273506036
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.77991737688863, 
+      "instance": "Sponge-03", 
+      "spin_deg": 158.252446730045
+    }, 
+    {
+      "axis": [
+        -0.5387695923264204, 
+        -0.8423875287310897, 
+        0.01051559902003493
+      ], 
+      "center_mm": [
+        -5.499353609195559, 
+        4.978526159759213, 
+        4.949105604141668
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.39748945270144, 
+      "instance": "Sponge-04", 
+      "spin_deg": 48.780057978008216
+    }, 
+    {
+      "axis": [
+        0.4845499368949049, 
+        0.8747118998035108, 
+        0.00951057292052072
+      ], 
+      "center_mm": [
+        6.3063631368292645, 
+        -3.8154023596824294, 
+        14.847315750642416
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.45507609587379, 
+      "instance": "Sponge-05", 
+      "spin_deg": 129.88033468737797
+    }, 
+    {
+      "axis": [
+        -0.4505310075181443, 
+        0.8927160688200554, 
+        0.008934860667729971
+      ], 
+      "center_mm": [
+        5.064264511468829, 
+        5.405688493434006, 
+        14.845902488310285
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.4880633815828, 
+      "instance": "Sponge-06", 
+      "spin_deg": 223.8040849486374
+    }, 
+    {
+      "axis": [
+        -0.7667320091310694, 
+        -0.6419233720296317, 
+        -0.007510700096570424
+      ], 
+      "center_mm": [
+        -5.735089103802068, 
+        4.78744731335033, 
+        14.84239947057901
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.5696645372986, 
+      "instance": "Sponge-07", 
+      "spin_deg": 148.91609677214853
+    }, 
+    {
+      "axis": [
+        0.6172366888579434, 
+        -0.7867362429997338, 
+        0.00805939689717086
+      ], 
+      "center_mm": [
+        -4.733519556554958, 
+        -5.417223877408965, 
+        14.84375028095252
+      ], 
+      "initial_axis_angle_to_vessel_deg": 89.53822557327263, 
+      "instance": "Sponge-08", 
+      "spin_deg": 165.2001017750498
+    }
+  ], 
+  "run_id": "R224_N08_RANDOM_LOW_E", 
+  "settle_duration_s": 2.0, 
+  "settle_screen_input_path": "D:\\program\\sponge expansion\\M03_test\\workflow\\V07_D30_axial_pressure_feedback\\04_solve\\R224_N08_RANDOM_LOW_E\\V07_D30_AFB_N08_RLOW_E_EPS10_C3D8_TAU050_SETTLE.inp", 
+  "settle_screen_job_name": "V07_D30_AFB_N08_RLOW_E_EPS10_C3D8_TAU050_SETTLE", 
+  "settled_nonparallel_required_count": 3, 
+  "settled_nonparallel_threshold_deg": 15.0, 
+  "sponge_count": 8, 
+  "status": "GENERATED_AWAITING_DATACHECK_AND_SETTLE_SCREEN", 
+  "study": "N08_random_low_initial_height", 
+  "swell_duration_s": 5.0, 
+  "tau_s": 0.5, 
+  "user_subroutine": "D:\\program\\sponge expansion\\M03_test\\workflow\\V07_D30_axial_pressure_feedback\\00_source\\pressure_feedback_axial.for", 
+  "workflow": "V07_D30_axial_pressure_feedback"
+}
